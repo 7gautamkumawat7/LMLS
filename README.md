@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # LifeSaver
 
 A production-ready emergency response web app built with React, Vite, Express, and AI-enabled triage.
@@ -64,3 +65,7 @@ Browse to `http://localhost:5000`
 - The app proxies client `/api` calls to the backend during local dev via Vite
 - `server/index.js` serves built assets when `dist/` exists
 - If Twilio is not configured, SMS is mocked for demo purposes
+=======
+# LMLS
+LifeSaver – AI Emergency Response System Developed a full-stack emergency response web application using React.js, Node.js, Firebase, Tailwind CSS, and Google Gemini AI. The system enables one-tap SOS alerts with real-time geolocation, AI-powered first-aid guidance, voice-activated emergency triggers, fall detection, SMS notifications.
+>>>>>>> 3fbd8ef6f30ef6b48f758a5dc64144e7792d18e6
