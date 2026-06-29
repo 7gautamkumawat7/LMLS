@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #1e293b; }
+::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+
+/* SOS Button glow effect */
+.sos-glow {
+  box-shadow: 0 0 60px rgba(239, 68, 68, 0.4), 
+              0 0 120px rgba(239, 68, 68, 0.2),
+              inset 0 0 30px rgba(239, 68, 68, 0.1);
+}
+
+.sos-glow:hover {
+  box-shadow: 0 0 80px rgba(239, 68, 68, 0.6), 
+              0 0 160px rgba(239, 68, 68, 0.3),
+              inset 0 0 40px rgba(239, 68, 68, 0.2);
+}
+
+/* Chat bubble animation */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.chat-bubble {
+  animation: slideUp 0.3s ease-out;
+}
+
+/* Countdown ring */
+.countdown-ring {
+  stroke-dasharray: 283;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
